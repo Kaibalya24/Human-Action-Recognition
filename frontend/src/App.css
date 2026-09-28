@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  padding: 45px 20px 30px;
+  background: #111827;
+  color: white;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 38px;
+}
+
+.header p {
+  margin-top: 10px;
+  font-size: 17px;
+  color: #cbd5e1;
+}
+
+.container {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.upload-card {
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.upload-card h2 {
+  margin-top: 0;
+  font-size: 28px;
+}
+
+.description {
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+.upload-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 200px;
+
+  border: 2px dashed #94a3b8;
+  border-radius: 15px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.upload-box:hover {
+  border-color: #2563eb;
+  background: #f8fafc;
+}
+
+.upload-box input {
+  display: none;
+}
+
+.upload-icon {
+  font-size: 45px;
+  margin-bottom: 12px;
+}
+
+.upload-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.upload-hint {
+  margin-top: 8px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.video-preview {
+  margin-top: 30px;
+}
+
+.video-preview h3 {
+  margin-bottom: 15px;
+}
+
+.video-preview video {
+  display: block;
+  width: 100%;
+  max-height: 400px;
+  border-radius: 12px;
+  background: black;
+}
+
+.predict-button {
+  margin-top: 30px;
+  padding: 14px 35px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 17px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.predict-button:hover {
+  background: #1d4ed8;
+}
+
+.predict-button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.error-message {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.result-card {
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 15px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.prediction {
+  margin-top: 20px;
+}
+
+.prediction-label {
+  display: block;
+  color: #64748b;
+  font-size: 15px;
+}
+
+.prediction-value {
+  display: block;
+  margin-top: 8px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.confidence {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 10px;
+  background: white;
+}
+
+.confidence strong {
+  color: #2563eb;
+}
+
+.probabilities {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.probabilities h3 {
+  margin-bottom: 20px;
+}
+
+.probability-row {
+  margin-bottom: 18px;
+}
+
+.probability-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+  font-size: 14px;
+}
+
+.progress-bar {
+  height: 10px;
+  border-radius: 10px;
+  background: #e2e8f0;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #2563eb;
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
